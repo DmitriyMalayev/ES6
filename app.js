@@ -1,5 +1,8 @@
-// REST parameter
-// Takes all the information and makes it an Array
+/* 
+REST parameter
+Takes all the information and makes it an Array
+*/
+
 const double = (...nums) => {
   return nums.map((num) => num * 2);
 };
@@ -9,8 +12,10 @@ const result = double(1, 3, 5, 7, 2, 4, 6, 8);
 console.log(result);
 //  [2, 6, 10, 14, 4, 8, 12, 16]
 
-// Spread Syntax
-// Spreads information from the Array into separate objects
+/*
+Spread Syntax
+Spreads information from the Array into separate objects
+*/
 const fruits1 = ["Peaches", "Apples", "Grapes"];
 const fruits2 = ["Pear", "Orange", "Bananas", ...fruits1];
 
@@ -26,9 +31,11 @@ const personClone = { ...person, location: "Queens, NY" }; //full copy of the ob
 console.log(personClone);
 // {name: 'Dmitriy Malayev', age: 38, profession: 'Software Engineer', location: 'Queens, NY'}
 
-// Sets (new DataStructure in the Object Category. ReferenceType. )
-// Sets don't allow duplicates values.
-// Sets return on Object even if we pass an Array. Unless we combine it with Spread syntax.
+/*
+Sets (new DataStructure in the Object Category. ReferenceType. )
+Sets don't allow duplicates values.
+Sets return on Object even if we pass an Array. Unless we combine it with Spread syntax.
+*/
 const namesArray = ["Dmitriy", "Dmitriy", "Dima", "David"];
 const namesSet = new Set(namesArray);
 console.log(namesSet);
@@ -64,10 +71,11 @@ const people = new Set([
 
 people.forEach((person) => console.log(person.name));
 
-// Symbols (completely unique)
-// It's a primitive type and doesn't require a "new" keyword.
-// They can be used as keys or property names in objects.
-
+/* 
+Symbols (completely unique)
+It's a primitive type and doesn't require a "new" keyword.
+They can be used as keys or property names in objects.
+*/
 const symbolOne = Symbol();
 const symbolTwo = Symbol();
 
